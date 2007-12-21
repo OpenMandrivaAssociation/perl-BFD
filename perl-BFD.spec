@@ -15,6 +15,7 @@ Url:		 http://search.cpan.org/dist/%{module}
 BuildRequires:	perl-devel
 %endif
 BuildArch:       noarch
+BuildRoot:	 %{_tmppath}/%{name}-%{version}
 
 %description
 Allows for impromptu dumping of output to STDERR. Useful when you want to take
