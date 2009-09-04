@@ -1,7 +1,7 @@
 %define	module	BFD
 %define	name	perl-%{module}
 %define	version	0.31
-%define	release	%mkrel 6
+%define	release	%mkrel 7
 
 Name:		%{name}
 Version:	%{version}
