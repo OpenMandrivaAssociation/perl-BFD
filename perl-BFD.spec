@@ -8,7 +8,7 @@ Release:	5
 Summary:	Impromptu dumping of data structures for debugging purposes  
 License:	GPL+ or Artistic
 Group:		Development/Perl
-Url:		http://search.cpan.org/dist/%{upstream_name}
+Url:		https://search.cpan.org/dist/%{upstream_name}
 Source0:	http://search.cpan.org/CPAN/authors/id/R/RB/RBS/%{upstream_name}-%{upstream_version}.tar.gz
 
 BuildRequires:	perl-devel
