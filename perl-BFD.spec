@@ -1,15 +1,13 @@
 %define	upstream_name	 BFD
-%define	upstream_version 0.31
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	6
+Version:	0.31
+Release:	7
 
 Summary:	Impromptu dumping of data structures for debugging purposes  
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/BFD
-Source0:	https://cpan.metacpan.org/authors/id/R/RB/RBS/BFD-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RB/RBS/BFD-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -21,7 +19,7 @@ a peek at a nest Perl data structure by emitting (relatively) nicely formatted
 output with filename and line number prefixed to each line.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
@@ -45,9 +43,7 @@ perl Makefile.PL INSTALLDIRS=vendor
 
 * Fri Feb 12 2010 Jérôme Quelin <jquelin@mandriva.org> 0.310.0-1mdv2011.0
 + Revision: 504586
-- rebuild using %%perl_convert_version
-
-* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 0.31-7mdv2010.0
+- rebuild using %0.31 Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 0.31-7mdv2010.0
 + Revision: 430265
 - rebuild
 
